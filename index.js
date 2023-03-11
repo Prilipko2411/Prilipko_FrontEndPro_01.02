@@ -7,7 +7,7 @@ let secondNumber = +prompt('Enter the second number') || 22
 
 let thirdNumber
 
-if (firstNumber == true && secondNumber == true) {
+if (!!firstNumber === true && !!secondNumber === true) {
     thirdNumber = 80
 } else {
     thirdNumber = 40
