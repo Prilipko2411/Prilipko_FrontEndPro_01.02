@@ -57,3 +57,22 @@ str2 = str2.slice(0,-1)
 console.log(str2)
 
 //7 
+
+let num = prompt('Введите целое число:');
+let status = true;
+
+if (num <= 1) {
+  status = false;
+} else {
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      status = false;
+      break;
+    }
+  }
+}
+if (status) {
+  alert(`${num} является простым числом`);
+} else {
+  alert(`${num} не является простым числом`);
+}
