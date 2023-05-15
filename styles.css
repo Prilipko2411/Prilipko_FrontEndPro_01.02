@@ -1,0 +1,94 @@
+header {
+  background-color: #4CAF50;
+}
+
+body {
+  margin: 0px;
+  background-color: #bee1d1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+
+}
+.wrapper {
+  display: flex;
+  background-color: #bee1d1;
+}
+
+.firstBox {
+  background-color: #bee1d1;
+  color: white;
+  padding: 20px;
+  width: 150px;
+}
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: #e7ff72;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  button:active {
+    background-color: #45a049;
+    color: black;
+  }
+  #category-container {
+    display: flex;
+    gap: 100px;
+    margin-left: 130px;
+}
+.category {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+  .item {
+    padding-bottom: 50px;
+  }
+  #conteinerFruit {
+    display: none;
+  }
+  #conteinerVegetables {
+    display: none;
+  }
+  #conteinerSweets {
+    display: none;
+  }
+
+  .info {
+    display: none;
+    background-color: #4caf50;
+    padding: 20px;
+    height: 240px;
+    border-radius: 50px;
+  }
+
+  

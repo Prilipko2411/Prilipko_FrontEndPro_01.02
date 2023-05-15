@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Supermarket ZUNAMI</h1>
+    </header>
+    <section>
+        <div class="wrapper">
+            <div class="firstBox">
+                <ul>
+                    <li><button id="buttonFruit" onclick="showCategory1()">Fruits</button></li>
+                    <li><button id="buttonVegetables" onclick="showCategory2()">Vegetables</button></li>
+                    <li><button id="buttonSweets" onclick="showCategory3()">Sweets</button></li>
+                  </ul>
+            </div>
+            <div id="category-container">
+                <div id="conteinerFruit" class="category">
+                    <h2>Fruits</h2>
+                    <div class="category-items">
+                      <div id="item-apple" class="item">
+                        <img src="Assets/Images/apple.png" alt="Apple">
+                        <h3>Apple</h3>
+                      </div>
+                      <div id="item-orange" class="item">
+                        <img src="Assets/Images/orange.png" alt="Orange">
+                        <h3>Orange</h3>
+                      </div>
+            </div>
+        </div>
+                    <div id="conteinerVegetables" class="category">
+                        <h2>Vegetables</h2>
+                        <div class="category-items">
+                        <div id="item-carrot" class="item">
+                            <img src="Assets/Images/carrot.png" alt="Carrot">
+                            <h3>Carrot</h3>
+                        </div>
+                        <div id="item-tomato" class="item">
+                            <img src="Assets/Images/tomato.png" alt="Tomato">
+                            <h3>Tomato</h3>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="conteinerSweets" class="category">
+                        <h2>Sweets</h2>
+                        <div class="category-items">
+                        <div id="item-chocolate" class="item">
+                            <img src="Assets/Images/chocolate.png" alt="Chocolate">
+                            <h3>Chocolate</h3>
+                        </div>
+                        <div id="item-candy" class="item">
+                            <img src="Assets/Images/candy.png" alt="Candy">
+                            <h3>Candy</h3>
+                        </div>
+                        </div>
+          </div>
+          <div id="product-informator-apple" class="info product-informator-apple">
+            <h2>Apple</h2>
+            <p>Price per kg: $10</p>
+            <p>Weight: 1 kg</p>
+            <p>Country of production: USA</p>
+            <button class="buy-button">Buy</button>
+          </div>
+          <div id="product-informator-orange" class="info product-informator-orange">
+            <h2>Orange</h2>
+            <p>Price per kg: $8</p>
+            <p>Weight: 1 kg</p>
+            <p>Country of production: USA</p>
+            <button class="buy-button">Buy</button>
+          </div>
+          <div id="product-informator-carrot" class="info product-informator-carrot">
+            <h2>Carrot</h2>
+            <p>Price per kg: $2</p>
+            <p>Weight: 1 kg</p>
+            <p>Country of production: Ukraine</p>
+            <button class="buy-button">Buy</button>
+          </div>
+          <div id="product-informator-tomato" class="info product-informator-tomato">
+            <h2>Tomato</h2>
+            <p>Price per kg: $4.50</p>
+            <p>Weight: 1 kg</p>
+            <p>Country of production: USA</p>
+            <button class="buy-button">Buy</button>
+          </div>
+          <div id="product-informator-chocolate" class="info product-informator-chocolate">
+            <h2>Chocolate</h2>
+            <p>Price per kg: $2.99</p>
+            <p>Weight: 99 g</p>
+            <p>Country of production: Belgium</p>
+            <button class="buy-button">Buy</button>
+          </div>
+          <div id="product-informator-candy" class="info product-informator-candy">
+            <h2>Candy</h2>
+            <p>Price per kg: $5</p>
+            <p>Weight: 500 g</p>
+            <p>Country of production: USA</p>
+            <button class="buy-button">Buy</button>
+          </div>
+        </div>
+        </div>
+        
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
