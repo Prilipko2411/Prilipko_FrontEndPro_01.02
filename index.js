@@ -96,3 +96,43 @@ for (let i = 0; i < allProductInformators.length; i++) {
 allProductInformators[i].style.display = 'none';
 }
 }
+
+function openModal() {
+    document.getElementById("order-modal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("order-modal").style.display = "none";
+  }
+
+  function submitOrder() {
+    let name = document.getElementById("name").value;
+    let city = document.getElementById("city").value;
+    let postOffice = document.getElementById("post-office").value;
+    let payment = document.getElementById("payment").value;
+    let quantity = document.getElementById("quantity").value;
+    let comment = document.getElementById("comment").value;
+  
+    if (name === "" || city === "" || postOffice === "" || payment === "" || quantity === "") {
+      alert("Будь ласка, заповніть всі обов'язкові поля");
+      return;
+    }
+  
+    let productInfo = "Інформація про товар:<br>" +
+                      "Назва: ...<br>" +
+                      "Ціна: ...<br>" +
+                      "Кількість: " + quantity + "<br>";
+  
+    let deliveryInfo = "Інформація про доставку:<br>" +
+                       "Місто: " + city + "<br>" +
+                       "Склад Нової пошти: " + postOffice + "<br>" +
+                       "Спосіб оплати: " + payment + "<br>" +
+                       "Коментар: " + comment + "<br>";
+  
+    document.getElementById("product-info").innerHTML = productInfo;
+    document.getElementById("delivery-info").innerHTML = deliveryInfo;
+  
+    document.getElementById("order-summary").style.display = "block"; 
+    closeModal();
+  }
+

@@ -91,4 +91,65 @@ h1 {
     border-radius: 50px;
   }
 
-  
+     .modal {
+      display: none; 
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto; 
+    }
+
+    .modal-content {
+      display: flex;
+      flex-direction: column;
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #order-summary {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    #order-summary h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    #product-info,
+    #delivery-info {
+      margin-bottom: 10px;
+    }
+
+    #product-info strong,
+    #delivery-info strong {
+      font-weight: bold;
+    }
+
+    #product-info span,
+    #delivery-info span {
+      display: block;
+      margin-top: 5px;
+    }

@@ -68,46 +68,92 @@
             <p>Price per kg: $10</p>
             <p>Weight: 1 kg</p>
             <p>Country of production: USA</p>
-            <button class="buy-button">Buy</button>
+            <button onclick="openModal()" class="buy-button">Buy</button>
           </div>
           <div id="product-informator-orange" class="info product-informator-orange">
             <h2>Orange</h2>
             <p>Price per kg: $8</p>
             <p>Weight: 1 kg</p>
             <p>Country of production: USA</p>
-            <button class="buy-button">Buy</button>
+            <button onclick="openModal()" class="buy-button">Buy</button>
           </div>
           <div id="product-informator-carrot" class="info product-informator-carrot">
             <h2>Carrot</h2>
             <p>Price per kg: $2</p>
             <p>Weight: 1 kg</p>
             <p>Country of production: Ukraine</p>
-            <button class="buy-button">Buy</button>
+            <button onclick="openModal()" class="buy-button">Buy</button>
           </div>
           <div id="product-informator-tomato" class="info product-informator-tomato">
             <h2>Tomato</h2>
             <p>Price per kg: $4.50</p>
             <p>Weight: 1 kg</p>
             <p>Country of production: USA</p>
-            <button class="buy-button">Buy</button>
+            <button onclick="openModal()" class="buy-button">Buy</button>
           </div>
           <div id="product-informator-chocolate" class="info product-informator-chocolate">
             <h2>Chocolate</h2>
             <p>Price per kg: $2.99</p>
             <p>Weight: 99 g</p>
             <p>Country of production: Belgium</p>
-            <button class="buy-button">Buy</button>
+            <button onclick="openModal()" class="buy-button">Buy</button>
           </div>
           <div id="product-informator-candy" class="info product-informator-candy">
             <h2>Candy</h2>
             <p>Price per kg: $5</p>
             <p>Weight: 500 g</p>
             <p>Country of production: USA</p>
-            <button class="buy-button">Buy</button>
+            <button onclick="openModal()" class="buy-button">Buy</button>
           </div>
         </div>
         </div>
         
+
+  <div id="order-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Форма оформлення замовлення</h2>
+      <label for="name">ПІБ покупця:</label>
+      <input type="text" id="name" required><br>
+      <label for="city">Місто:</label>
+      <select id="city" required>
+        <option value="">Виберіть місто</option>
+        <option value="Київ">Київ</option>
+        <option value="Львів">Львів</option>
+        <option value="Одеса">Одеса</option>
+        <option value="Дніпро">Дніпро</option>
+        <option value="Харків">Харків</option>
+        <option value="Суми">Суми</option>
+        <option value="Чернівці">Чернівці</option>
+        <option value="Полтава">Полтава</option>
+      </select><br>
+
+      <label for="post-office">Склад Нової пошти:</label>
+      <input type="text" id="post-office" required><br>
+
+      <label for="payment">Спосіб оплати:</label>
+      <select id="payment" required>
+        <option value="післяплата">Післяплата</option>
+        <option value="банківська картка">Банківська картка</option>
+      </select><br>
+
+      <label for="quantity">Кількість продукції:</label>
+      <input type="number" id="quantity" required><br>
+
+      <label for="comment">Коментар до замовлення:</label>
+      <textarea id="comment"></textarea><br>
+
+      <button onclick="submitOrder()">Підтвердити замовлення</button>
+    </div>
+  </div>
+<div class="info-order">
+  <div id="order-summary" style="display: none;">
+    <h2>Інформація про замовлення</h2>
+    <div id="product-info"></div>
+    <div id="delivery-info"></div>
+  </div>
+</div>
+
     </section>
     <script src="index.js"></script>
 </body>
