@@ -1,0 +1,62 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.conteiner {
+    padding: 40px;
+    margin: 0 auto;
+    width: 1024px;
+    background-color: beige;
+    margin-top: 50px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider {
+    width: 285px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    height: 200px;
+    width: 1140px;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+img {
+    width: 285px;
+    height: 200px;
+}
+
+.slider-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+button {
+    height: 48px;
+    width: 48px;
+    border: 1.5px solid black;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    background: border-box;
+    transition: width 0.5s;
+    border-radius: 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+button:hover {
+    background-color: azure;
+}
